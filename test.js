@@ -1,58 +1,67 @@
 // 문제 데이터
 var testNum = [
 	{
-    "title": "문제1번",
-    "description": "문제 내용",
-    "A": "1283120",
-    "B": "239478273"
+    "title": "1",
+    "description": "지원자 외모가 면접이나 채용 결과에 영향을 끼친다는 말에",
+    "A": "동의하는 편이야",
+    "B": "전혀 동의하지 않아",
+		"answer": "A"
   },
 	{
-    "title": "문제2번",
-    "description": "문제 내용",
-    "A": "234",
-    "B": "433443"
+    "title": "2",
+    "description": "현재 한국 사회에서 남성은 여성보다 취업하기 쉽다는 의견에",
+  	"A": "동의해",
+		"B": "hmm,,, 보통인 것 같아",
+		"answer": "B"
   },
 	{
-    "title": "문제3번",
-    "description": "문제 내용",
-    "A": "32234",
-    "B": "87"
+    "title": "3",
+    "description": "우리 회사 조직 문화와는 안 맞지만 뛰어난 인재가 있다면",
+    "A": "채용할래",
+    "B": "채용 안 할 거야",
+		"answer": "B"
   },
 	{
-    "title": "문제4번",
-    "description": "문제 내용",
-    "A": "6756",
-    "B": "45yhfgb"
+    "title": "4",
+    "description": "둘 중의 하나만 골라야 한다면, 회사에서 이런 사람이 더 낫지",
+    "A": "분위기메이커에 근면성실하고 착한 일못러",
+    "B": "성격파탄 근태엉망인 똑똑한 일잘러",
+		"answer": "A"
   },
 	{
-    "title": "문제5번",
-    "description": "문제 내용",
-    "A": "342s5",
-    "B": "fgnfgc"
+    "title": "5",
+    "description": "리모트 워크는 '여기'에 더 가깝다고 생각해",
+    "A": "복지 제도의 하나야",
+    "B": "일하는 방법, 문화의 하나야",
+		"answer": "B"
   },
 	{
-    "title": "문제6번",
-    "description": "문제 내용",
-    "A": "dsgf",
-    "B": "fds"
+    "title": "6",
+    "description": "앞으로 조직 문화에서 가장 중요해질 키워드는 이걸 거야",
+    "A": "평등함",
+    "B": "자율성",
+		"answer": "B"
   },
 	{
-    "title": "문제7번",
-    "description": "문제 내용",
-    "A": "hsrgwaew",
-    "B": "dfgs"
+    "title": "7",
+    "description": "지원자와 커뮤니케이션하다 다른 지원자 이름을 썼다! 어쩌지",
+    "A": "그냥 잊어버릴래",
+    "B": "인지 즉시 사과하고 정정할 거야",
+		"answer": "B"
   },
 	{
-    "title": "문제8번",
-    "description": "문제 내용",
-    "A": "sergser",
-    "B": "sger"
+    "title": "8",
+    "description": "근속 연수가 긴 회사의 특징은 이것일 것 같아",
+    "A": "능력 좋은 동료가 많음!",
+    "B": "회사 문화(분위기)가 좋음!",
+		"answer": "B"
   },
 	{
-    "title": "문제9번",
-    "description": "문제 내용",
-    "A": "sergrvxd",
-    "B": "ik"
+    "title": "9",
+    "description": "인사팀(인사담당자)은 여기에 더 가깝지 않을까?",
+    "A": "사측",
+    "B": "노동자측",
+		"answer": "A"
   }
 ];
 
@@ -60,23 +69,28 @@ var testNum = [
 var result = {
   "case1": {
     "title": "s,,,t,,,,,,a,,y,,,,",
-    "explain": "s,,,t,,,,,,a,,y,,,,"
+    "explain": "s,,,t,,,,,,a,,y,,,,",
+		"imageUrl": "https://placeimg.com/200/100/any"
   },
   "case2": {
     "title": "당신은 지금의 직업에서 행복할 수 있어요",
-    "explain": "논리적인 당신은 지금의 직업에서 행복할 수 있어요"
+    "explain": "논리적인 당신은 지금의 직업에서 행복할 수 있어요",
+		"imageUrl": "https://placeimg.com/200/100/any/grayscale",
   },
   "case3": {
     "title": "HRer와 원활한 공감이 가능한 편",
-    "explain": "HRer 원활한 공감이 가능한 편"
+    "explain": "HRer 원활한 공감이 가능한 편",
+		"imageUrl": "https://placeimg.com/200/100/any/sepia",
   },
   "case4": {
     "title": "이미 언제든 HRer 될 준비가 되어벌임",
-    "explain": "이미 언제든 HRer 될 준비가 되어벌임"
+    "explain": "이미 언제든 HRer 될 준비가 되어벌임",
+		"imageUrl": "https://placeimg.com/200/100/any/people",
   },
   "case5": {
     "title": "엥 이미 HRer 아닌가요?",
-    "explain": "엥 이미 HRer 아닌가요?"
+    "explain": "엥 이미 HRer 아닌가요?",
+		"imageUrl": "https://placeimg.com/200/100/any/tech",
   }
 };
 
@@ -98,15 +112,16 @@ var $myResult = document.querySelector('#myresult');
 var $explain = document.querySelector('#explain');
 var $startBtn = document.querySelector('#startbutton');
 var $retryBtn = document.querySelector('#retrybutton');
+var $resultImg = document.querySelector('#resultimg');
 
-// GO! 하면 불리는 함수(시작하기)
+// 알아보기 누르면 불리는 함수(시작하기)
 var testStart = function(){
 	next();
   $main.style.display = "none";
   $test.style.display = "block";
 };
 
-// 다시하기하면 불리는 함수
+// 다시하기 누르면 불리는 함수
 var retry = function(){
 	$result.style.display = "none";
   $main.style.display = "block";
@@ -148,7 +163,9 @@ var resultCase = function() {
 
 	$myResult.innerHTML = result[caseType].title;
 	$explain.innerHTML = result[caseType].explain;
+	$resultImg.src = result[caseType].imageUrl;
 }
+
 
 // 다음 문항으로 넘어갈떄 불리는 함수
 var next = function(){
@@ -163,13 +180,19 @@ var next = function(){
 $startBtn.addEventListener('click', testStart);
 // A안을 선택한 경우
 $optionA.addEventListener('click', function(){
-		var temp = Number($score.value);
-		$score.value = temp + 1;
+		if(testNum[i - 1].answer === "A") {
+			var temp = Number($score.value);
+			$score.value = temp + 1;
+		}
 		next();
 	}
 );
 // B안을 선책한 경우
 $optionB.addEventListener('click', function(){
+		if(testNum[i - 1].answer === "B") {
+			var temp = Number($score.value);
+			$score.value = temp + 1;
+		}
 		next();
 	}
 );
