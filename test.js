@@ -2,28 +2,28 @@
 var testNum = [
 	{
     "title": "1",
-    "description": "지원자 외모가 면접이나 채용 결과에 영향을 끼친다는 말에",
+    "description": "'지원자 외모가 면접이나 채용 결과에 영향을 끼친다'는 말에",
     "A": "동의하는 편이야",
     "B": "전혀 동의하지 않아",
 		"answer": "A"
   },
 	{
     "title": "2",
-    "description": "현재 한국 사회에서 남성은 여성보다 취업하기 쉽다는 의견에",
+    "description": "'현재 한국 사회에서 남성은 여성보다 취업하기 쉽다'는 의견에",
   	"A": "동의해",
 		"B": "hmm,,, 보통인 것 같아",
 		"answer": "B"
   },
 	{
     "title": "3",
-    "description": "우리 회사 조직 문화와는 안 맞지만 뛰어난 인재가 있다면",
+    "description": "우리 회사 조직 문화와는 안 맞지만 엄청나게 뛰어난 인재가 있다면",
     "A": "채용할래",
     "B": "채용 안 할 거야",
 		"answer": "B"
   },
 	{
     "title": "4",
-    "description": "둘 중의 하나만 골라야 한다면, 회사에서 이런 사람이 더 낫지",
+    "description": "둘 중의 하나만 골라야 한다면, 회사에서 이런 사람이 더 낫지!",
     "A": "분위기메이커에 근면성실하고 착한 일못러",
     "B": "성격파탄 근태엉망인 똑똑한 일잘러",
 		"answer": "A"
@@ -69,31 +69,30 @@ var testNum = [
 var result = {
   "case1": {
     "title": "s,,,t,,,,,,a,,y,,,,",
-    "explain": "s,,,t,,,,,,a,,y,,,,",
-		"imageUrl": "https://placeimg.com/200/100/any"
+    "explain": "인사담당자들의 주류 의견과 다르게 생각하는군. 인사담당자들과 하나도 똑같이 생각하지 않았거나 한 개 정도 생각이 일치했어. </br>지금 하는 일에 머무르는 게 좋을 것 같아. 혹시 어떤 일 하고 있어? 인사 업무를 하고 있다면,, 남들과는 다른 특별한 문화를 만들 수 있을 것 같아 (〃･ิ‿･ิ)ゞ",
+		"imageUrl": "/Users/uni/Desktop/DT무제,,,/테스트시작이라긔/img/result-c1.gif"
   },
   "case2": {
-    "title": "당신은 지금의 직업에서 행복할 수 있어요",
-    "explain": "논리적인 당신은 지금의 직업에서 행복할 수 있어요",
-		"imageUrl": "https://placeimg.com/200/100/any/grayscale",
+    "title": "당신은 지금의 직업에서 행복할 수</br>있어요",
+    "explain": "인사담당자들과 꽤 다른 입장을 보였어. 9개 질문 중에 최대 3개의 질문에만 인사담당자들과 공감했어. 지금 하는 일에 집중하면 좋겠다! </br>인사담당자랑 이야기할 때는 쪼금 신경 써도 좋을 것 같아! 근거는 없어 하핫",
+		"imageUrl": "/Users/uni/Desktop/DT무제,,,/테스트시작이라긔/img/result-c2.jpeg",
   },
   "case3": {
-    "title": "HRer와 원활한 공감이 가능한 편",
-    "explain": "HRer 원활한 공감이 가능한 편",
-		"imageUrl": "https://placeimg.com/200/100/any/sepia",
+    "title": "인사담당자와 원활한 공감이 가능한 편",
+    "explain": "오! 인사담당자들과 꽤 비슷하게 사고하는 것 같아! 반 정도의 질문에 인사담당자들의 주류 의견과 똑같이 응답했어. </br>인사담당자로 일하게 된다면 아무 말이나 해도 일단 반은 먹힐 것 같아. 근거는 없으니 실천하면 안 돼ヽ(°□° )ノ",
+		"imageUrl": "/Users/uni/Desktop/DT무제,,,/테스트시작이라긔/img/result-c3.jpg",
   },
   "case4": {
-    "title": "이미 언제든 HRer 될 준비가 되어벌임",
-    "explain": "이미 언제든 HRer 될 준비가 되어벌임",
-		"imageUrl": "https://placeimg.com/200/100/any/people",
+    "title": "이미 언제든 HRer가 될 수 있을 듯",
+    "explain": "언제든 인사담당자로 변신할 수 있을 것 같아! 반 이상의 질문에 인사담당자들과 똑같이 응답했어. </br>이 설문을 응답한 인사담당자 중에는 1~200명 규모의 인사담당자가 가장 많아. 이 규모의 인사담당자들과 한 번 이야기해봐! 서로 고개를 끄덕이는 일이 꽤 있을 것 같아. 하지만 책임은 못 지니까 조심하라구 |･ω･)",
+		"imageUrl": "/Users/uni/Desktop/DT무제,,,/테스트시작이라긔/img/result-c4.gif",
   },
   "case5": {
-    "title": "엥 이미 HRer 아닌가요?",
-    "explain": "엥 이미 HRer 아닌가요?",
-		"imageUrl": "https://placeimg.com/200/100/any/tech",
+    "title": "엥 이미 인사담당자 아닌가요?",
+    "explain": "이미 인사담당자 아니야? 인사담당자들과 생각이 완전 똑같은데?! </br>이 설문을 응답한 인사담당자 중에는 1~200명 규모의 인사담당자가 가장 많아. 이 규모의 인사담당자로 일한다면 아주 잘해낼 수 있겠어! 근거는 없으니 적극적으로 실천하는 건 안 돼! ヽ(ｏ`皿′ｏ)ﾉ",
+		"imageUrl": "/Users/uni/Desktop/DT무제,,,/테스트시작이라긔/img/result-c5.jpeg",
   }
 };
-
 
 var i = 0; // 현재 문제
 
@@ -165,7 +164,6 @@ var resultCase = function() {
 	$explain.innerHTML = result[caseType].explain;
 	$resultImg.src = result[caseType].imageUrl;
 }
-
 
 // 다음 문항으로 넘어갈떄 불리는 함수
 var next = function(){

@@ -1,19 +1,21 @@
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #f1f2f3;
+}
+
 #wrap{
 	max-width: 500px;
 	margin: 30px auto;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
 }
 
 #main{
-	text-align: center;
+	/* text-align: center; */
 }
 
 #number{
 	text-align: end;
-}
-
-#resultimg{
-	margin: 0 auto;
-	width: 50%;
 }
 
 #test{
@@ -22,4 +24,29 @@
 
 #result{
 	display: none;
+}
+
+#resultimg{
+	margin: 0 auto;
+	width: 100%;
+}
+
+#startbutton{
+	background-color: #2c5bf2;
+	color: #fff;
+}
+
+#sharebutton{
+	margin-right: 5px;
+	background-color: #2c5bf2;
+	color: #fff;
+}
+
+#retrybutton{
+	background-color: #2c5bf2;
+	color: #fff;
+}
+
+#surveyfairy{
+	color: #2c5bf2;
 }
