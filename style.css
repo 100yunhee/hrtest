@@ -5,13 +5,17 @@ body {
 
 #wrap{
 	max-width: 500px;
-	margin: 30px auto;
+	margin: 5px auto;
 	border-right: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 }
 
 #main{
 	/* text-align: center; */
+}
+
+#resultFooter{
+	font-size: 12px;
 }
 
 #number{
@@ -49,4 +53,8 @@ body {
 
 #surveyfairy{
 	color: #2c5bf2;
+}
+
+#A{
+		font-size: 15px;
 }

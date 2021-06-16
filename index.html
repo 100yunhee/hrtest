@@ -7,7 +7,12 @@
 	<!-- css Import -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;900&display=swap" rel="stylesheet">
+	<style type="text/css">a {text-decoration: none;}</style>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width" initial-scale="1">
 </head>
@@ -18,12 +23,12 @@
 		<div id="main" class="container">
 			<div class="row">
 				<div class="col-12">
-					<img class="mt-2" src="img/title.png" alt="살려주세요,," width="100%">
+					<img class="mt-2" src="./img/title.png" alt="살려주세요,," width="100%">
 					<h3 class="mt-3 fw-bold">인사담당자는 나와 어울리는 직업일까 🤔</h3>
-					<h6 class="mt-4">내가 인사담당자로 일하면 얼마나 어울릴까?</h6>
-					<h6 class="mt-1">다양한 산업군과 규모의 회사에서 일하는 현직 인사담당자들이 응답한 내용을 바탕으로 나는 인사담당자와 얼마나 비슷하게 사고하는지 알아보자!</h6>
+					<h6 class="mt-4">내가 인사담당자로 일한다면 얼마나 어울릴까?</h6>
+					<h6>다양한 산업군과 규모의 회사에 재직 중인 인사담당자들이 실제 응답한 내용을 바탕으로, 나는 인사담당자와 얼마나 비슷하게 사고하는지 알아보자!</h6>
 					<div class="mt-4">
-						<button class="btn" id="startbutton" type="button">알아보기</button>
+						<button class="btn" id="startbutton" type="button">시작</button>
 					</div>
 				</div>
 			</div>
@@ -33,16 +38,16 @@
 		<div id="test" class="container">
 			<div class="row">
 				<div class="col-12">
-					<p id="number" class="mt-5">문제번호 1/9</p>
+					<p id="number" class="mt-2">1/9</p>
 					<div id="progress" class="progress">
-						<div class="progress-bar bg-success" role="progressbar" style="" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" role="progressbar" style="" aria-valuemin="0" aria-valuemax="100">
 						</div>
 					</div>
 					<h3 id="title" class="mt-3">문제타이틀</h3>
-					<h5 id="description" class="mt-3">문제내용</h5>
+					<h6 id="description" class="mt-3">문제내용</h6>
 					<input type="hidden" id="type">
 					<div class="mt-4 d-grid gap-2">
-						<button id="A" class="btn btn-dark" type="button">선택1</button>
+						<button id="A" class="btn btn-dark mt-4" type="button">선택1</button>
 						<button id="B" class="btn btn-dark" type="button">선택2</button>
 					</div>
 				</div>
@@ -56,11 +61,13 @@
 					<img id="resultimg" class="mt-2" alt="후우끝나갑니다,,">
 					<h3 id="myresult" class="mt-3 fw-bold">결과타이틀</h3>
 					<h6 id="explain" class="mt-4">결과설명</h6>
-					<h6 id="surveyfairy" class="mt-4">👀 실제 인사담당자들의 응답이 궁금하다면</h6>
 					<div class="mt-4">
 						<button id="sharebutton" class="btn" type="button">공유하기</button>
 						<button id="retrybutton" class="btn" type="button">다시하기</button>
 					</div>
+					<!-- 여기 링크도 까먹지 말고 트래킹 심기 -->
+					<h6 id="surveyfairy" class="mt-4"><a href="https://survey-fairy.surge.sh/" target="_blank">👀 실제 인사담당자들의 응답이 궁금하다면</a></h6>
+					<div id="resultFooter" class="mt-4">(결과에 참고한 설문의 표본 크기는 200~300명이며 인사담당자라는 직무의 모집단을 대표할 수 없어. 결과를 진지하게 받아들이면 안 돼! 진지 멈춰!)</div>
 				</div>
 			</div>
 		</div>
